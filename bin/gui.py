@@ -1,6 +1,7 @@
 from tkinter import * #Tk, Label, Button, NORMAL, DISABLED, ImagePhoto
 from utility import *
 from random import choice
+import os
 
 def place(x): # since i am using the older gui which was based on a 3*3 matrix
 	if x==1:
@@ -26,10 +27,10 @@ game = ttt()
 root = Tk()
 gameType='Single Player'
 
-icon = PhotoImage(file = "images/table.png")
-circle = PhotoImage(file ="images/circle.png")
-cross = PhotoImage(file ="images/cross.png")
-bg = PhotoImage(file="images/bg.png")
+icon = PhotoImage(file=os.path.dirname(__file__).replace('bin','images\\')+"table.png")
+circle = PhotoImage(file =os.path.dirname(__file__).replace('bin','images\\')+"circle.png")
+cross = PhotoImage(file =os.path.dirname(__file__).replace('bin','images\\')+"cross.png")
+bg = PhotoImage(file=os.path.dirname(__file__).replace('bin','images\\')+"bg.png")
 
 root.iconphoto(False, icon)
 root.title("TicTacToe")
