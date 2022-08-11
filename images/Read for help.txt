@@ -1,0 +1,5 @@
+If you don't like the current icons/images or wish to change them:
+1)download a image of your wish
+2)convert it into 64*64px .png image
+3)rename it respectively(small letters only and give the same name)
+4) delete the old image and place it here
